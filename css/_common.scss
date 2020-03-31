@@ -1,0 +1,75 @@
+
+html{
+  font-size: 1px;
+}
+body{
+  background: #697fe7; background-image: linear-gradient(#74a1ee, #6d89e9);
+  background-repeat: no-repeat; background-attachment: fixed; 
+   font-size: 16rem; color: #fff;
+}
+.bold{
+  font-weight: 700;
+}
+h2, h3, span, li{
+  &::selection{
+    background-color: #895910;
+  }
+}
+.main{
+  max-width: 1220px; margin: 0 auto; padding-top: 72px;  
+}
+/*top-sectin, top-image*/
+.top{
+  &-section{
+      display: flex;
+      .title{
+        color: var(--main-blue-color); font-family: "RalewayLight", sans-serif;
+        font-size: 34rem;
+      }
+      .main-title{
+          font-family: "RalewayBlack", sans-serif; font-size: 85rem;
+          text-transform: uppercase; margin-top: 16px; line-height: 0.9;
+      }
+  }
+  &-image{
+    max-width: 470px; max-height: 450px;
+  }
+}
+.list{
+
+  &-item{
+    display: flex; align-items: center; font-family: "QuiksandBold", sans-serif; 
+    font-size: 14rem; margin-top: 12px; 
+    &::before{
+      width: 20px; height: 20px; margin-right: 8px;
+      background-repeat: no-repeat;
+    }
+    &:first-child::before{
+      content: '';
+      display: block;
+      background-image: url('../images/alarm-clock.svg');
+      background-size: 16px 19px; 
+    }
+    &:nth-child(2)::before{
+      content: '';
+      display: block;
+      background-image: url('../images/metabolism.svg');
+      background-size: 18px 18px;
+    }
+    &:nth-child(3)::before{
+      content: '';
+      display: block;
+      background-image: url('../images/tracking.svg');
+      background-size: 20px 20px;
+    }
+    &:nth-child(4)::before{
+      content: '';
+      display: block;
+      background-image: url('../images/dna.svg');
+      background-size: 20px 20px;
+    }
+  }
+}
+.bottom-section{
+  margin-top: 12px;
+}

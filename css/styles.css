@@ -1,0 +1,147 @@
+html {
+  font-size: 1px;
+}
+
+body {
+  background: #697fe7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#74a1ee), to(#6d89e9));
+  background-image: linear-gradient(#74a1ee, #6d89e9);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 16rem;
+  color: #fff;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+h2::-moz-selection, h3::-moz-selection, span::-moz-selection, li::-moz-selection {
+  background-color: #895910;
+}
+
+h2::selection, h3::selection, span::selection, li::selection {
+  background-color: #895910;
+}
+
+.main {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-top: 72px;
+}
+
+/*top-sectin, top-image*/
+.top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-section .title {
+  color: var(--main-blue-color);
+  font-family: "RalewayLight", sans-serif;
+  font-size: 34rem;
+}
+
+.top-section .main-title {
+  font-family: "RalewayBlack", sans-serif;
+  font-size: 85rem;
+  text-transform: uppercase;
+  margin-top: 16px;
+  line-height: 0.9;
+}
+
+.top-image {
+  max-width: 470px;
+  max-height: 450px;
+}
+
+.list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "QuiksandBold", sans-serif;
+  font-size: 14rem;
+  margin-top: 12px;
+}
+
+.list-item::before {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+}
+
+.list-item:first-child::before {
+  content: '';
+  display: block;
+  background-image: url("../images/alarm-clock.svg");
+  background-size: 16px 19px;
+}
+
+.list-item:nth-child(2)::before {
+  content: '';
+  display: block;
+  background-image: url("../images/metabolism.svg");
+  background-size: 18px 18px;
+}
+
+.list-item:nth-child(3)::before {
+  content: '';
+  display: block;
+  background-image: url("../images/tracking.svg");
+  background-size: 20px 20px;
+}
+
+.list-item:nth-child(4)::before {
+  content: '';
+  display: block;
+  background-image: url("../images/dna.svg");
+  background-size: 20px 20px;
+}
+
+.bottom-section {
+  margin-top: 12px;
+}
+
+@font-face {
+  font-family: "RalewayBlack";
+  src: url("../fonts/Raleway/Raleway-Black.ttf");
+}
+
+@font-face {
+  font-family: "RalewayLight";
+  src: url("../fonts/Raleway/Raleway-Light.ttf");
+}
+
+@font-face {
+  font-family: "QuiksandBold";
+  src: url("../fonts/Quiksand/Quicksand-Bold.ttf");
+}
+
+:root {
+  --main-blue-color:#2d589a;
+  --light-blue-color: #4c70a8;
+}
+
+.cards-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards-item {
+  min-width: 310px;
+  max-width: 398px;
+  border-radius: 30px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.cards-item .card-title {
+  background-color: var(--light-blue-color);
+}
+/*# sourceMappingURL=styles.css.map */
