@@ -4,8 +4,9 @@ html{
 }
 body{
   background: #697fe7; background-image: linear-gradient(#74a1ee, #6d89e9);
-  background-repeat: no-repeat; background-attachment: fixed; 
-   font-size: 16rem; color: #fff;
+   
+  background-attachment: fixed; 
+  font-size: 16rem; color: #fff;
 }
 .bold{
   font-weight: 700;
@@ -38,7 +39,7 @@ h2, h3, span, li{
 .list{
 
   &-item{
-    display: flex; align-items: center; font-family: "QuiksandBold", sans-serif; 
+    display: flex; align-items: center; font-family: "QuicksandBold", sans-serif; 
     font-size: 14rem; margin-top: 12px; 
     &::before{
       width: 20px; height: 20px; margin-right: 8px;
@@ -71,5 +72,5 @@ h2, h3, span, li{
   }
 }
 .bottom-section{
-  margin-top: 12px;
+  display: flex; margin-top: 80px;
 }

@@ -6,7 +6,6 @@ body {
   background: #697fe7;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#74a1ee), to(#6d89e9));
   background-image: linear-gradient(#74a1ee, #6d89e9);
-  background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 16rem;
   color: #fff;
@@ -63,7 +62,7 @@ h2::selection, h3::selection, span::selection, li::selection {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "QuiksandBold", sans-serif;
+  font-family: "QuicksandBold", sans-serif;
   font-size: 14rem;
   margin-top: 12px;
 }
@@ -104,7 +103,10 @@ h2::selection, h3::selection, span::selection, li::selection {
 }
 
 .bottom-section {
-  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
 }
 
 @font-face {
@@ -118,8 +120,13 @@ h2::selection, h3::selection, span::selection, li::selection {
 }
 
 @font-face {
-  font-family: "QuiksandBold";
+  font-family: "QuicksandBold";
   src: url("../fonts/Quiksand/Quicksand-Bold.ttf");
+}
+
+@font-face {
+  font-family: "QuicksandRegular";
+  src: url("../fonts/Quiksand/Quicksand-Regular.ttf");
 }
 
 :root {
@@ -131,17 +138,74 @@ h2::selection, h3::selection, span::selection, li::selection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1100px;
+  margin-left: 24px;
+}
+
+.cards-list .logo {
+  width: 182px;
+  height: 156px;
 }
 
 .cards-item {
-  min-width: 310px;
-  max-width: 398px;
+  /*  min-width: 310px; max- */
+  width: 398px;
   border-radius: 30px;
   background-color: #fff;
+  color: var(--main-blue-color);
   overflow: hidden;
+  text-align: center;
 }
 
 .cards-item .card-title {
-  background-color: var(--light-blue-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #4c70a8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4c70a8), to(#5376ac));
+  background-image: linear-gradient(#4c70a8, #5376ac);
+  background-attachment: fixed;
+  color: #fff;
+  height: 64px;
+  font-size: 17rem;
+  font-family: "QuicksandRegular", sans-serif;
+}
+
+.cards-item .card-content {
+  padding-left: 30px;
+}
+
+.cards-item.first-card .card-content {
+  padding-right: 56px;
+  padding-top: 56px;
+  padding-bottom: 32px;
+}
+
+.cards-item.first-card .text {
+  font-family: "QuicksandBold", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 21px;
+  margin-top: 48px;
+}
+
+.cards-item.second-card {
+  -webkit-box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.03);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  margin-top: -12px;
+}
+
+.cards-item.second-card .card-title {
+  background: #4c70a8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d589a), to(#355f9a));
+  background-image: linear-gradient(#2d589a, #355f9a);
 }
 /*# sourceMappingURL=styles.css.map */
