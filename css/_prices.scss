@@ -1,0 +1,60 @@
+/*price-list, price-item, title-shipping*/
+.price{
+  border-radius: $border-radius; overflow: hidden;
+  border:1px solid var(--light-border-color); 
+  margin-top: 16px;
+  &-list{
+    display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;
+  }
+  &-item{
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    border-left: 1px solid var(--light-border-color);
+    border-top: 1px solid var(--light-border-color);
+    height: 70px;
+    &:first-child{
+      border-left: none; border-top: none;
+    }
+    &:nth-child(2){
+      border-top: none;
+    }
+    .title{
+        font-family: "QuicksandBold", sans-serif; font-size: 11rem; 
+        color: var(--light-gray-color);
+      &-shipping{
+        display: flex;
+        &::before{
+          content: '';
+          display: block;
+          background-image: url('../images/shipping-icon.svg');
+          background-size: 15px 11px;
+          width: 15px; height: 11px; margin-right: 6px;
+        }
+      }
+    }
+    
+    .text{
+      font-family: "QuicksandRegular", sans-serif; font-size: 17px;
+      color: var(--green-color); margin-top: 8px;
+      &.regular-price{
+        color: var(--red-color); text-decoration: line-through;
+      }
+    }
+  }
+ 
+}
+.money-sign::before{
+  content: '$';
+}
+.percentegae-sign::after{
+  content: '%';
+}
+.todays-price{
+  margin-top: 24px;
+}
+.todays-price-value {
+  border-bottom: 1px solid var(--lighter-border-color); padding-bottom: 16px;
+  font-family: "QuicksandLight", sans-serif; font-size: 47rem;
+    &.money-sign::before{
+      font-size: 22px; color:#a3b6d4;
+    }
+}

@@ -129,9 +129,20 @@ h2::selection, h3::selection, span::selection, li::selection {
   src: url("../fonts/Quiksand/Quicksand-Regular.ttf");
 }
 
+@font-face {
+  font-family: "QuicksandLight";
+  src: url("../fonts/Quiksand/Quicksand-Light.ttf");
+}
+
 :root {
   --main-blue-color:#2d589a;
   --light-blue-color: #4c70a8;
+  --light-gray-color: #98a0af;
+  --green-color: #4abe33;
+  --red-color: #f77163;
+  /*Border color variables*/
+  --light-border-color: #ededed;
+  --lighter-border-color: #f2f2f2;
 }
 
 .cards-list {
@@ -207,5 +218,132 @@ h2::selection, h3::selection, span::selection, li::selection {
   background: #4c70a8;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2d589a), to(#355f9a));
   background-image: linear-gradient(#2d589a, #355f9a);
+}
+
+.cards-item.second-card .card-content {
+  padding-right: 30px;
+  padding-top: 18px;
+}
+
+.cards-item.second-card .buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+}
+
+.cards-item.second-card .btn {
+  background-color: #f0f0f0;
+  border-radius: 21px;
+  border: 0;
+  min-height: 42px;
+}
+
+.cards-item.second-card .btn.active {
+  background-color: #76a6ef;
+}
+
+/*price-list, price-item, title-shipping*/
+.price {
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid var(--light-border-color);
+  margin-top: 16px;
+}
+
+.price-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.price-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 1px solid var(--light-border-color);
+  border-top: 1px solid var(--light-border-color);
+  height: 70px;
+}
+
+.price-item:first-child {
+  border-left: none;
+  border-top: none;
+}
+
+.price-item:nth-child(2) {
+  border-top: none;
+}
+
+.price-item .title {
+  font-family: "QuicksandBold", sans-serif;
+  font-size: 11rem;
+  color: var(--light-gray-color);
+}
+
+.price-item .title-shipping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price-item .title-shipping::before {
+  content: '';
+  display: block;
+  background-image: url("../images/shipping-icon.svg");
+  background-size: 15px 11px;
+  width: 15px;
+  height: 11px;
+  margin-right: 6px;
+}
+
+.price-item .text {
+  font-family: "QuicksandRegular", sans-serif;
+  font-size: 17px;
+  color: var(--green-color);
+  margin-top: 8px;
+}
+
+.price-item .text.regular-price {
+  color: var(--red-color);
+  text-decoration: line-through;
+}
+
+.money-sign::before {
+  content: '$';
+}
+
+.percentegae-sign::after {
+  content: '%';
+}
+
+.todays-price {
+  margin-top: 24px;
+}
+
+.todays-price-value {
+  border-bottom: 1px solid var(--lighter-border-color);
+  padding-bottom: 16px;
+  font-family: "QuicksandLight", sans-serif;
+  font-size: 47rem;
+}
+
+.todays-price-value.money-sign::before {
+  font-size: 22px;
+  color: #a3b6d4;
 }
 /*# sourceMappingURL=styles.css.map */

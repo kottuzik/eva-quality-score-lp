@@ -6,6 +6,11 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+ 
 </head>
 <body>
   <main class="main">
@@ -35,6 +40,77 @@
           </li>
           <li class="cards-item second-card">
             <p class="card-title">Choose Your Package</p>
+            <div class="card-content">
+              <div class="buttons">
+                <button class="btn active" id="btn1">1 Jar</button>
+                <button class="btn" id="btn2">3 Jars</button>
+                <button class="btn" id="btn3">6 Jars</button>
+              </div>
+              <div class="first-price">
+                <ul class="price price-list">
+                  <li class="price-item" id="price1">
+                    <p class="title">Regular Price:</p>
+                    <p class="text regular-price money-sign" id="regularPrice1">74.95</p>
+                  </li>
+                  <li class="price-item">
+                    <p class="title">Today's Discount:</p>
+                    <p class="text percentegae-sign" id="discount1"></p>
+                  </li>
+                  <li class="price-item">
+                    <p class="title">Instant Savings:</p>
+                    <p class="text money-sign" id="price1Instant"></p>
+                  </li>
+                  <li class="price-item">
+                    <p class="title title-shipping">Shipping:</p>
+                    <p class="text">Free</p>
+                  </li>
+                </ul>
+                <div class="todays-price">
+                  <span class="todays-price-value money-sign" id="todaysPrice1">49.95</span>
+                </div>
+              </div>
+              <div class="second-price">
+                <ul class="price price-list">
+                  <li class="price-item" id="price2">
+                    <p class="title">Regular Price:</p>
+                    <p class="text money-sign regular-price">224.85</p>
+                  </li>
+                  <li class="price-item">
+                    <p class="title">Today's Discount:</p>
+                    <p class="text percentegae-sign" id="discount1"></p>
+                  </li>
+                  <li class="price-item">
+                    <p class="title">Instant Savings:</p>
+                    <p class="text money-sign" id="price2Instant"></p>
+                  </li>
+                  <li class="price-item">
+                    <p class="title title-shipping">Shipping:</p>
+                    <p class="text">Free</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="third-price">
+                <ul class="price price-list">
+                  <li class="price-item" id="price3">
+                    <p class="title">Regular Price:</p>
+                    <p class="text money-sign regular-price">449.70</p>
+                  </li>
+                  <li class="price-item">
+                    <p class="title">Today's Discount:</p>
+                    <p class="text percentegae-sign" id="discount3"></p>
+                  </li>
+                  <li class="price-item">
+                    <p class="title">Instant Savings:</p>
+                    <p class="text money-sign" id="price3Instant"></p>
+                  </li>
+                  <li class="price-item">
+                    <p class="title title-shipping">Shipping:</p>
+                    <p class="text">Free</p>
+                  </li>
+                </ul>
+              </div>
+             
+            </div>    
           </li>
           <li class="cards-item">
             <p class="card-title">100 Pure</p>
@@ -42,5 +118,6 @@
       </ul>
     </section>
   </main>
+  <script src="index.js"></script>
 </body>
 </html>
