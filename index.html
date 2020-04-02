@@ -6,10 +6,13 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="slider/responsiveslides.css">
+  <link rel="stylesheet" type="text/css" href="css/slider.css">
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
  
 </head>
 <body>
@@ -141,19 +144,29 @@
                   <span class="text">(This is a one time payment)</span>
                 </div>
               </div>
-
             </div>    
 
-            <div class="mobile-slider only-mobile" id="sliderContainer">
-              <div id="slide1">
-                <p class="card-title">1 Jar</p>
-              </div>
-              <div id="slide2">
-                <p class="card-title">3 Jars</p>
-              </div>
-              <div id="slide2">
-                <p class="card-title">6 Jars</p>
-              </div>
+            <div class="rslides_container only-mobile" id="sliderContainer">
+              <ul class="rslides" id="slider">
+                <li id="slide1">
+                  <div class="slide">
+                    <p class="card-title">1 Jar</p>
+                    <div class="slide-content">
+                      
+                    </div>
+                  </div>
+                </li>
+                <li id="slide2">
+                  <div class="slide">
+                    <p class="card-title">3 Jars</p>
+                  </div>
+                </li>
+                <li id="slide3">
+                  <div class="slide">
+                    <p class="card-title">6 Jars</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </li>
           <li class="cards-item third-card">
@@ -178,5 +191,17 @@ hibiscus powder into 8 fl. oz. of water and
     </section>
   </main>
   <script src="index.js"></script>
+  <script src="slider/slider.min.js"></script>
+  <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 0,
+        namespace: "centered-btns"
+      });
+    });
+  </script>
 </body>
 </html>

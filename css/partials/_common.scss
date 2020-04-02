@@ -33,8 +33,9 @@ h2, h3, span, li{
   .desktop-only{
     display: none;
   }
-}
+  
 
+}
 @media #{$break2open} {
   .only-mobile{
     display: none;

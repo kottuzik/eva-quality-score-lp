@@ -7,7 +7,7 @@
   }
   
     &-item{
-    border-radius: $border-radius; background-color: #fff;
+    border-radius: $border-radius; 
     color: var(--main-blue-color); overflow: hidden; text-align: center;
     
       .card-title{
@@ -93,6 +93,9 @@
   }
   .cards-item{
     max-width: 312px;
+    .card-title.desktop-only{
+      display: none;
+    }
   }
   .cards-list{
     flex-direction: column-reverse;
@@ -101,13 +104,10 @@
 @media #{$break2open} {
   .cards-item.second-card{
     transform: scale(1.2);
-    .card-title{
-      
-    }
+   
   }
-  
   .cards-item{
-    width: 398px;
+    width: 398px; background-color: #fff;
   }
   .cards-list{
     margin-left: 24px;

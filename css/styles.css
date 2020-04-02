@@ -332,7 +332,6 @@ h2::selection, h3::selection, span::selection, li::selection {
 
 .cards-item {
   border-radius: 30px;
-  background-color: #fff;
   color: var(--main-blue-color);
   overflow: hidden;
   text-align: center;
@@ -481,6 +480,9 @@ h2::selection, h3::selection, span::selection, li::selection {
   .cards-item {
     max-width: 312px;
   }
+  .cards-item .card-title.desktop-only {
+    display: none;
+  }
   .cards-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -496,6 +498,7 @@ h2::selection, h3::selection, span::selection, li::selection {
   }
   .cards-item {
     width: 398px;
+    background-color: #fff;
   }
   .cards-list {
     margin-left: 24px;
