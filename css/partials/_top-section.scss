@@ -1,0 +1,70 @@
+/*top-section, top-image*/
+.top{
+  &-section{
+      display: flex;
+      .title{
+        color: var(--main-blue-color); font-family: "RalewayLight", sans-serif;
+        font-size: 34rem;
+      }
+      .main-title{
+          font-family: "RalewayBlack", sans-serif; 
+          text-transform: uppercase; margin-top: 16px; line-height: 0.9;
+      }
+  }
+  &-image{
+    max-width: 470px; max-height: 450px;
+  }
+}
+
+.offer .list{
+  &-item{
+    display: flex; align-items: center; font-family: "QuicksandBold", sans-serif; 
+    font-size: 14rem; line-height: 18px; margin-top: 12px; 
+    &::before{
+      width: 20px; height: 20px; padding-right: 8px;
+      background-repeat: no-repeat;
+    }
+    &:first-child::before{
+      content: '';
+      display: block;
+      background-image: url('../images/alarm-clock.svg');
+      background-size: 16px 19px; 
+    }
+    &:nth-child(2)::before{
+      content: '';
+      display: block;
+      background-image: url('../images/metabolism.svg');
+      background-size: 18px 18px;
+    }
+    &:nth-child(3)::before{
+      content: '';
+      display: block;
+      background-image: url('../images/tracking.svg');
+      background-size: 20px 20px;
+    }
+    &:nth-child(4)::before{
+      content: '';
+      display: block;
+      background-image: url('../images/dna.svg');
+      background-size: 20px 20px;
+    }
+  }
+}
+
+@media #{$break1} {
+  .top-section{
+    .main-title{font-size: 53rem;}
+  }
+  .top-image{
+    display: none;
+  }
+  .offer .list-item::before{
+    margin-right: 8px;
+  }
+  
+}
+@media #{$break2open} {
+  .top-section{
+    .main-title{font-size: 85rem;}
+  }
+}

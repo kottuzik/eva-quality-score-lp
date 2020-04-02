@@ -1,4 +1,17 @@
 .btn-cart{
   background-color: #d7f741; height: 69px; text-align: center; 
-  
+  width:100%; border:none; border-radius: 5px; margin-top: 24px;
+  .btn-text{
+    @include flexCenter;
+    font-family: "QuicksandMedium", sans-serif; font-size: 17rem; color: var(--main-blue-color);
+    
+    &::before{
+      $size-icon: 16px;
+      content: '';
+      display: block;
+      background-image: url(../../images/cart.svg);
+      background-repeat: no-repeat; background-size: $size-icon $size-icon;
+      width: $size-icon; height: $size-icon; margin-right: 8px;
+    }
+  }
 }
