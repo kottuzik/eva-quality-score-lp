@@ -49,12 +49,19 @@
   content: '%';
 }
 .todays-price{
-  margin-top: 24px;
+  display: flex; flex-direction: column; margin-top: 24px; 
+  .text{
+    margin-top: 8px; font-family: "QuicksandBold", sans-serif; font-size: 11rem;
+  }
 }
 .todays-price-value {
+  display: flex; align-items: center; justify-content: center;
   border-bottom: 1px solid var(--lighter-border-color); padding-bottom: 16px;
   font-family: "QuicksandLight", sans-serif; font-size: 47rem;
     &.money-sign::before{
       font-size: 22px; color:#a3b6d4;
+      margin-top: auto;
+      margin-bottom: 5px;
+  
     }
 }

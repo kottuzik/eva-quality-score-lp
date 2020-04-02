@@ -68,5 +68,24 @@ const secondPriceCard = () =>{
   Discount();
 }
 
+const thirdPriceCard = () =>{
+  let regularPriceValue = parseFloat(document.getElementById("regularPrice3").innerText);
+  let discountPriceValue = parseFloat(document.getElementById("todaysPrice3").innerText);
+
+  const instantSavings = () =>{
+    let  instantSavings = regularPriceValue - discountPriceValue;
+    document.getElementById("price3Instant").innerHTML = instantSavings;
+  }
+  
+  const Discount = () =>{
+    let discPercentage = ((discountPriceValue / regularPriceValue - 1) * 100) * (-1)
+    document.getElementById("discount3").innerHTML = parseInt(discPercentage);
+  }
+
+  instantSavings();
+  Discount();
+}
+
 firstPriceCard();
 secondPriceCard();
+thirdPriceCard();

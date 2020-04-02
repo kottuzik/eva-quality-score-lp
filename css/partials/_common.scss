@@ -19,7 +19,8 @@ h2, h3, span, li{
 .main{
   max-width: 1220px; margin: 0 auto; padding-top: 72px;  
 }
-/*top-sectin, top-image*/
+.list-item{display: flex;}
+/*top-section, top-image*/
 .top{
   &-section{
       display: flex;
@@ -36,8 +37,7 @@ h2, h3, span, li{
     max-width: 470px; max-height: 450px;
   }
 }
-.list{
-
+.offer .list{
   &-item{
     display: flex; align-items: center; font-family: "QuicksandBold", sans-serif; 
     font-size: 14rem; margin-top: 12px; 

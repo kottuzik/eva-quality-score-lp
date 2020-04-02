@@ -1,5 +1,7 @@
-@import 'common';
-@import 'fonts';
-@import 'variables';
-@import 'cards-list';
-@import 'prices';
+@import 'partials/mixins';
+@import 'partials/common';
+@import 'partials/fonts';
+@import 'partials/variables';
+@import 'partials/prices'; 
+@import 'partials/cards-list';
+@import 'partials/buttons'; 
