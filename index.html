@@ -152,18 +152,24 @@
                   <div class="slide">
                     <p class="card-title">1 Jar</p>
                     <div class="slide-content">
-                      
+                        <img src="images/1-product.png" class="slide-image" alt="One product">
                     </div>
                   </div>
                 </li>
                 <li id="slide2">
                   <div class="slide">
                     <p class="card-title">3 Jars</p>
+                    <div class="slide-content">
+                      <img src="images/3-products.png" class="slide-image" alt="Three products">
+                    </div>
                   </div>
                 </li>
                 <li id="slide3">
                   <div class="slide">
                     <p class="card-title">6 Jars</p>
+                    <div class="slide-content">
+                      <img src="images/6-products.png" class="slide-image" alt="Six products">
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -191,7 +197,8 @@ hibiscus powder into 8 fl. oz. of water and
     </section>
   </main>
   <script src="index.js"></script>
-  <script src="slider/slider.min.js"></script>
+  <!-- <script src="slider/slider.min.js"></script> -->
+  <script src="slider/responsiveslides.js"></script>
   <script>
     $(function () {
       $("#slider").responsiveSlides({
@@ -199,6 +206,8 @@ hibiscus powder into 8 fl. oz. of water and
         pager: true,
         nav: true,
         speed: 0,
+        prevText: "&#60;",
+        nextText: "&#62;",
         namespace: "centered-btns"
       });
     });

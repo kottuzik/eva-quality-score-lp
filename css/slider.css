@@ -1,11 +1,10 @@
 .rslides {
-  margin: 0 auto;
+  margin: 0 auto 32px;
   }
 
 .rslides_container {
   margin-bottom: 50px;
   position: relative;
-  float: left;
   width: 100%;
   }
 
@@ -13,20 +12,17 @@
   z-index: 3;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50px;
   opacity: 0.7;
-  text-indent: -9999px;
   overflow: hidden;
   text-decoration: none;
-  height: 61px;
   width: 38px;
-  background: transparent url("themes.gif") no-repeat left top;  
 }
 
 .centered-btns_nav.next {
   left: auto;
   background-position: right top;
-  right: 0;
+  right: 50px;
 }
 
 .transparent-btns_nav {
@@ -88,7 +84,11 @@
 .large-btns_tabs li {
     display: inline;
     float: none;
-    margin-right: 5px;
+    margin-right: 20px;
+}
+.centered-btns_tabs li:last-child,
+.large-btns_tabs li:last-child{
+  margin-right: 0;
 }
 
 .centered-btns_tabs a,
