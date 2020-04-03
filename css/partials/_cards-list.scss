@@ -16,16 +16,12 @@
         background-attachment: fixed; color: #fff;
         height: 64px; font-size: 17rem; font-family: "QuicksandRegular", sans-serif;
       }
-      .card-content{
-        padding-left: 30px; 
-      }
+    
       &.first-card, &.third-card{
         max-height: 409px;
       }
     &.first-card {
-      .card-content{
-        padding-right:56px; padding-top: 56px; padding-bottom: 30px;
-      }
+     
       .card-text{
         font-family: "QuicksandBold", sans-serif; font-size: 13px; 
         text-transform: uppercase; line-height: 21px;
@@ -33,7 +29,7 @@
       }
     }
     &.second-card{
-      margin-top: -12px; padding-bottom: 20px;
+      padding-bottom: 20px;
       .card-title{
         background: #4c70a8; background-image: linear-gradient(#2d589a, #355f9a);
       }
@@ -75,12 +71,14 @@
         }
       }
     }
-    .card-content{
-      background-color: #fafafa;
-    }
+    
   }
 }
-
+.mobile-package-title{
+  font-family: "QuicksandBold", sans-serif; font-size: 14rem; color: #d7f741;
+  text-transform: uppercase; margin-bottom: 30px;
+}
+/*Breakpoints*/
 @media #{$break1} {
   .second-card{    
     .card-content{
@@ -90,11 +88,31 @@
   .third-card{
     display: none;
   }
-  .cards-item{
-    max-width: 312px;
-    .card-title.desktop-only{
-      display: none;
+  .cards-item{     
+    .card-content{
+      background-color: var(--light-gray-bg); margin-top: -1px;
     }
+    .card-title{
+      background-image: none; background-color: var(--light-gray-bg); color: #76a6ef;  
+      &.desktop-only{
+        display: none;
+      }
+    }
+    &.first-card{
+      max-width: 100%; border-radius: 0;
+      .card-text{
+        background-color: var(--light-gray-bg); margin-top: -1px; color:#97a7c0;
+      }
+
+    }
+    &.second-card{
+      width: 90%; margin: 0 auto;     
+    }
+    .slide .card-title{
+      border-top-left-radius: 30px; border-top-right-radius: 30px;
+      font-family: "QuicksandBold", sans-serif; font-size: 24rem; color: #fff;
+    }
+   
   }
   .cards-list{
     flex-direction: column-reverse;
@@ -104,27 +122,37 @@
 .centered-btns_nav{
   font-family: "RalewayMedium", sans-serif; font-size: 24rem; color: #fff;
 }
+/*slide-content, slide-content-text*/
 .slide-content{
-  background-color: #fff; 
+  background-color: #fff; padding-bottom: 24px; 
   border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;
   .slide-image{
     max-width: 310px;
   }
-}
-/*Breakpoints*/
-@media #{$break1} {
-  .cards-item .card-title{
-    border-top-left-radius: 30px; border-top-right-radius: 30px;
+  &-text{
+    padding-left: 16px; padding-right: 16px;
   }
 }
+
 @media #{$break2open} {
   .cards-item{
     width: 398px; background-color: #fff;
+    &.first-card{
+        .card-content{
+          padding-bottom: 30px; padding-right: 56px; padding-top: 56px;
+        }
+    }
     &.second-card{
-      transform: scale(1.2); box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.03);
+      transform: scale(1.2); box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.03); margin-top: -12px;
+    }
+    .card-content{
+      background-color: #fafafa; padding-left: 30px; 
     }
   }
   .cards-list{
     margin-left: 24px;
+  }
+  .rslides_container.only-mobile{
+    display: none ;
   }
 }

@@ -21,25 +21,19 @@ h2, h3, span, li{
 }
 .list-item{display: flex;}
 
-
-.bottom-section{
-  display: flex; margin-top: 80px;
-}
+.bottom-section{display: flex;}
 
 @media #{$break1} {
-  .main{
+  .offer{
     padding-left: 16px; padding-right: 16px;
   }
-  .desktop-only{
-    display: none;
-  }
   .bottom-section{
-    justify-content: center;
+    justify-content: center; margin-top: 64px;
   }
-
 }
 @media #{$break2open} {
-  .only-mobile{
-    display: none;
+  .main{
+    padding-bottom: 107px;
   }
+  .bottom-section{margin-top: 80px;}
 }

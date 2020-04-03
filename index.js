@@ -39,6 +39,7 @@ const firstPriceCard = () =>{
   const instantSavings = () =>{
     let  instantSavings = regularPriceValue - discountPriceValue;
     document.getElementById("price1Instant").innerHTML = instantSavings;
+    document.getElementById("price1InstantSlider").innerHTML = instantSavings;
   }
 
   const Discount = () =>{
@@ -57,6 +58,7 @@ const secondPriceCard = () =>{
   const instantSavings = () =>{
     let  instantSavings = regularPriceValue - discountPriceValue;
     document.getElementById("price2Instant").innerHTML = instantSavings;
+    document.getElementById("price2InstantSlider").innerHTML = instantSavings;
   }
   
   const Discount = () =>{
@@ -75,6 +77,7 @@ const thirdPriceCard = () =>{
   const instantSavings = () =>{
     let  instantSavings = regularPriceValue - discountPriceValue;
     document.getElementById("price3Instant").innerHTML = instantSavings;
+    document.getElementById("price3InstantSlider").innerHTML = instantSavings;
   }
   
   const Discount = () =>{

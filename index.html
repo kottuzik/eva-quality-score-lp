@@ -6,7 +6,6 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="slider/responsiveslides.css">
   <link rel="stylesheet" type="text/css" href="css/slider.css">
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -43,7 +42,9 @@
     <section class="bottom-section">
       <ul class="cards-list">
           <li class="cards-item first-card">
-            <p class="card-title bold">100% MONEY BACK GUARANTEE</p>
+            <p class="card-title bold">
+              <span>100% MONEY BACK GUARANTEE</span>
+            </p>
             <div class="card-content">
               <img src="images/guarantee.png" class="logo" alt="Guarantee">
             </div>
@@ -55,7 +56,7 @@
           </li>
           <li class="cards-item second-card">
             <p class="card-title desktop-only">
-              Choose Your Package
+              <span>Choose Your Package</span>
             </p>
             <div class="card-content">
               <div class="buttons">
@@ -67,15 +68,15 @@
                 <ul class="price price-list">
                   <li class="price-item" id="price1">
                     <p class="title">Regular Price:</p>
-                    <p class="text regular-price money-sign" id="regularPrice1">74.95</p>
+                    <p class="text regular-price money-sign regularPrice1" id="regularPrice1">74.95</p>
                   </li>
                   <li class="price-item">
                     <p class="title">Today's Discount:</p>
-                    <p class="text percentegae-sign" id="discount1"></p>
+                    <p class="text percentegae-sign discount1" id="discount1"></p>
                   </li>
                   <li class="price-item">
                     <p class="title">Instant Savings:</p>
-                    <p class="text money-sign" id="price1Instant"></p>
+                    <p class="text money-sign price1Instant" id="price1Instant"></p>
                   </li>
                   <li class="price-item">
                     <p class="title title-shipping">Shipping:</p>
@@ -83,7 +84,7 @@
                   </li>
                 </ul>
                 <div class="todays-price">
-                  <span class="todays-price-value money-sign" id="todaysPrice1">
+                  <span class="todays-price-value money-sign todaysPrice1" id="todaysPrice1">
                     49.95
                   </span>
                   <span class="text">(This is a one time payment)</span>
@@ -95,15 +96,15 @@
                 <ul class="price price-list">
                   <li class="price-item" id="price2">
                     <p class="title">Regular Price:</p>
-                    <p class="text regular-price money-sign" id="regularPrice2">224.85</p>
+                    <p class="text regular-price money-sign regularPrice2" id="regularPrice2">224.85</p>
                   </li>
                   <li class="price-item">
                     <p class="title">Today's Discount:</p>
-                    <p class="text percentegae-sign" id="discount2"></p>
+                    <p class="text percentegae-sign discount2" id="discount2"></p>
                   </li>
                   <li class="price-item">
                     <p class="title">Instant Savings:</p>
-                    <p class="text money-sign" id="price2Instant"></p>
+                    <p class="text money-sign price2Instant" id="price2Instant"></p>
                   </li>
                   <li class="price-item">
                     <p class="title title-shipping">Shipping:</p>
@@ -111,26 +112,27 @@
                   </li>
                 </ul>
                 <div class="todays-price">
-                  <span class="todays-price-value money-sign" id="todaysPrice2">
+                  <span class="todays-price-value money-sign todaysPrice2" id="todaysPrice2">
                     134.85
                   </span>
                   <span class="text">(This is a one time payment)</span>
                 </div>
+                <button class="btn-cart"><span class="btn-text">Buy Now</span></button>
               </div>
               
               <div class="third-price">
                 <ul class="price price-list">
                   <li class="price-item" id="price3">
                     <p class="title">Regular Price:</p>
-                    <p class="text regular-price money-sign" id="regularPrice3">449.70</p>
+                    <p class="text regular-price money-sign regularPrice3" id="regularPrice3">449.70</p>
                   </li>
                   <li class="price-item">
                     <p class="title">Today's Discount:</p>
-                    <p class="text percentegae-sign" id="discount3"></p>
+                    <p class="text percentegae-sign discount3" id="discount3"></p>
                   </li>
                   <li class="price-item">
                     <p class="title">Instant Savings:</p>
-                    <p class="text money-sign" id="price3Instant"></p>
+                    <p class="text money-sign price3Instant" id="price3Instant"></p>
                   </li>
                   <li class="price-item">
                     <p class="title title-shipping">Shipping:</p>
@@ -138,45 +140,126 @@
                   </li>
                 </ul>
                 <div class="todays-price">
-                  <span class="todays-price-value money-sign" id="todaysPrice3">
+                  <span class="todays-price-value money-sign todaysPrice3" id="todaysPrice3">
                     254.70
                   </span>
                   <span class="text">(This is a one time payment)</span>
                 </div>
+                <button class="btn-cart"><span class="btn-text">Buy Now</span></button>
               </div>
             </div>    
 
+            <p class="only-mobile mobile-package-title">Choose Your Package</p>
             <div class="rslides_container only-mobile" id="sliderContainer">
               <ul class="rslides" id="slider">
                 <li id="slide1">
                   <div class="slide">
-                    <p class="card-title">1 Jar</p>
+                    <p class="card-title">
+                      <span>1 Jar</span>
+                    </p>
                     <div class="slide-content">
                         <img src="images/1-product.png" class="slide-image" alt="One product">
+                        <div class="slide-content-text">
+                          <ul class="price price-list">
+                            <li class="price-item">
+                              <p class="title">Regular Price:</p>
+                              <p class="text regular-price money-sign regularPrice1" id="regularPrice1">74.95</p>
+                            </li>
+                            <li class="price-item">
+                              <p class="title">Instant Savings:</p>
+                              <p class="text money-sign" id="price1InstantSlider"></p>
+                            </li>
+                            <li class="price-item">
+                              <p class="title title-shipping">Shipping:</p>
+                              <p class="text">Free</p>
+                            </li>
+                          </ul>
+                          <div class="todays-price">
+                            <span class="todays-price-value money-sign">
+                              49.95
+                            </span>
+                            <span class="text">This is a one time payment</span>
+                          </div>
+                        </div>
                     </div>
                   </div>
                 </li>
                 <li id="slide2">
                   <div class="slide">
-                    <p class="card-title">3 Jars</p>
+                    <p class="card-title">
+                      <span>3 Jars</span>
+                    </p>
                     <div class="slide-content">
                       <img src="images/3-products.png" class="slide-image" alt="Three products">
+                      <div class="slide-content-text">
+                        <ul class="price price-list">
+                          <li class="price-item">
+                            <p class="title">Regular Price:</p>
+                            <p class="text regular-price money-sign">
+                              224.85
+                            </p>
+                          </li>
+                          <li class="price-item">
+                            <p class="title">Instant Savings:</p>
+                            <p class="text money-sign" id="price2InstantSlider"></p>
+                          </li>
+                          <li class="price-item">
+                            <p class="title title-shipping">Shipping:</p>
+                            <p class="text">Free</p>
+                          </li>
+                        </ul>
+                        <div class="todays-price">
+                          <span class="todays-price-value money-sign">
+                            134.85
+                          </span>
+                          <span class="text">This is a one time payment</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </li>
                 <li id="slide3">
                   <div class="slide">
-                    <p class="card-title">6 Jars</p>
+                    <p class="card-title">
+                      <span>6 Jars</span>
+                    </p>
                     <div class="slide-content">
                       <img src="images/6-products.png" class="slide-image" alt="Six products">
+                      <div class="slide-content-text">
+                        <ul class="price price-list">
+                          <li class="price-item">
+                            <p class="title">Regular Price:</p>
+                            <p class="text regular-price money-sign">
+                              449.70
+                            </p>
+                          </li>
+                          <li class="price-item">
+                            <p class="title">Instant Savings:</p>
+                            <p class="text money-sign" id="price3InstantSlider"></p>
+                          </li>
+                          <li class="price-item">
+                            <p class="title title-shipping">Shipping:</p>
+                            <p class="text">Free</p>
+                          </li>
+                        </ul>
+                        <div class="todays-price">
+                          <span class="todays-price-value money-sign">
+                            254.70
+                          </span>
+                          <span class="text">This is a one time payment</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </li>
               </ul>
             </div>
+            <button class="btn-cart only-mobile"><span class="btn-text">Buy Now</span></button>
           </li>
           <li class="cards-item third-card">
-            <p class="card-title">100 Pure</p>
+            <p class="card-title">
+              <span>100 Pure</span>
+            </p>
             <div class="card-content">
                 <ul class="list">
                     <li class="list-item"><span>Greater savings</span></li>
@@ -197,7 +280,7 @@ hibiscus powder into 8 fl. oz. of water and
     </section>
   </main>
   <script src="index.js"></script>
-  <!-- <script src="slider/slider.min.js"></script> -->
+
   <script src="slider/responsiveslides.js"></script>
   <script>
     $(function () {

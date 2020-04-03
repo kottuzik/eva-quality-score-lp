@@ -1,0 +1,10 @@
+@media #{$break1}{
+  .desktop-only{
+    display: none;
+  }
+}
+@media #{$break2open} {
+  .only-mobile{
+    display: none;
+  }
+}
